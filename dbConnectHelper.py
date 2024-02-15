@@ -16,7 +16,8 @@ def validatePerson(login, password):
 
         for i in users:
             if (i.login == login and i.password == password):
-                isLoggined = True
+                return True
 
-    return isLoggined
+    print(1)
+
 

@@ -26,7 +26,7 @@
    <string>МИС+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="mainWidget">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -47,8 +47,16 @@
       <height>600</height>
      </size>
     </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="firstpage">
      <attribute name="title">
@@ -63,6 +71,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="cursor">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -76,6 +92,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Фамилия *</string>
       </property>
@@ -88,6 +112,14 @@
         <width>151</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>Номер страхового полиса *</string>
@@ -105,6 +137,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="cursor">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -112,11 +152,20 @@
      <widget class="QPushButton" name="confirmAddPatient">
       <property name="geometry">
        <rect>
-        <x>590</x>
-        <y>490</y>
+        <x>600</x>
+        <y>500</y>
         <width>191</width>
         <height>61</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
@@ -134,6 +183,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -147,6 +204,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -159,6 +224,14 @@
         <width>82</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor">
        <cursorShape>IBeamCursor</cursorShape>
@@ -176,6 +249,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Отчество</string>
       </property>
@@ -188,6 +269,14 @@
         <width>82</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor">
        <cursorShape>IBeamCursor</cursorShape>
@@ -205,6 +294,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -218,6 +315,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
      </widget>
      <widget class="QTextEdit" name="address">
       <property name="geometry">
@@ -227,6 +332,14 @@
         <width>761</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -241,6 +354,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Email(почта)</string>
       </property>
@@ -253,6 +374,14 @@
         <width>181</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -267,6 +396,14 @@
         <height>13</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Серия *</string>
       </property>
@@ -279,6 +416,14 @@
         <width>151</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>Номер медицинской карты</string>
@@ -293,6 +438,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Адрес</string>
       </property>
@@ -305,6 +458,14 @@
         <width>101</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>Дата рождения</string>
@@ -319,6 +480,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
      </widget>
      <widget class="QTextEdit" name="numverOfMedicalCard">
       <property name="geometry">
@@ -328,6 +497,14 @@
         <width>271</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -342,6 +519,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Номер телефона *</string>
       </property>
@@ -354,6 +539,14 @@
         <width>121</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -368,6 +561,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -380,6 +581,14 @@
         <width>151</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>Страховая компания *</string>
@@ -397,6 +606,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Дата окончания страхового полиса *</string>
       </property>
@@ -413,6 +630,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
      </widget>
      <widget class="QLabel" name="label_16">
       <property name="geometry">
@@ -422,6 +647,14 @@
         <width>151</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>Место работы *</string>
@@ -439,6 +672,14 @@
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
      </widget>
      <widget class="QTextEdit" name="numerPassport">
       <property name="geometry">
@@ -448,6 +689,14 @@
         <width>121</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -462,6 +711,14 @@
         <height>13</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Имя *</string>
       </property>
@@ -474,6 +731,14 @@
         <width>211</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -488,6 +753,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Номер медицинской карты</string>
       </property>
@@ -500,6 +773,14 @@
         <width>151</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>Дата следующего визита</string>
@@ -517,6 +798,14 @@
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Дата последнего визита</string>
       </property>
@@ -532,6 +821,15 @@
         <width>231</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -549,6 +847,14 @@
         <height>13</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Номер *</string>
       </property>
@@ -558,40 +864,20 @@
      <attribute name="title">
       <string>Госпитализация</string>
      </attribute>
-     <widget class="QTextEdit" name="numberOfInsurancePolis_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>380</y>
-        <width>231</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
-      </property>
-     </widget>
-     <widget class="QDateEdit" name="dateInsuranceDead_2">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>380</y>
-        <width>191</width>
-        <height>40</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>120</y>
-        <width>47</width>
-        <height>13</height>
+        <x>20</x>
+        <y>140</y>
+        <width>71</width>
+        <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Серия *</string>
@@ -600,209 +886,112 @@
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>430</y>
-        <width>121</width>
+        <x>20</x>
+        <y>490</y>
+        <width>161</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Код госпитализации *</string>
       </property>
      </widget>
+     <widget class="QTextEdit" name="serialPasport_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>51</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="diagnosis">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>448</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="hospitalizationRefusalCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>15</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Отказ от госпиталици </string>
+      </property>
+     </widget>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>580</x>
-        <y>30</y>
+        <x>440</x>
+        <y>50</y>
         <width>121</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Отчество</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="patronumic_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>300</y>
-        <width>211</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Фамилия *</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_3">
-      <property name="geometry">
-       <rect>
-        <x>570</x>
-        <y>150</y>
-        <width>82</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-      <property name="text">
-       <string>Мужской</string>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="serialPasport_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>140</y>
-        <width>121</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_22">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>120</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Номер *</string>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="workingPlace_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>220</y>
-        <width>361</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_23">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>30</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Имя *</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_24">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>280</y>
-        <width>151</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Страховая компания *</string>
-      </property>
-      <property name="scaledContents">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QDateEdit" name="dateHostopilization">
-      <property name="geometry">
-       <rect>
-        <x>510</x>
-        <y>380</y>
-        <width>191</width>
-        <height>40</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="surname_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>50</y>
-        <width>180</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="name_2">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>50</y>
-        <width>181</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="patronumic_4">
-      <property name="geometry">
-       <rect>
-        <x>580</x>
-        <y>50</y>
-        <width>181</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="hospitalizationCode">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>450</y>
-        <width>121</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="cursor" stdset="0">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_25">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>360</y>
-        <width>191</width>
+        <x>440</x>
+        <y>220</y>
+        <width>271</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Дата окончания страхового полиса *</string>
@@ -811,14 +1000,250 @@
        <bool>false</bool>
       </property>
      </widget>
+     <widget class="QTextEdit" name="numberOfInsurancePolis_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>160</y>
+        <width>231</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>475</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Врач</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateHostopilization_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>380</y>
+        <width>121</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="isBudgetCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>15</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Бюджетная основа</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="isPayedCheckbox">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>15</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Платная основа</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>417</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Отделение</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="hospitalizationGoal">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>305</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="department">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>435</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="workingPlace_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>361</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="reasonFirHospitalizationCansel">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>365</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Фамилия *</string>
+      </property>
+     </widget>
      <widget class="QPushButton" name="getPatientCode">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>450</y>
-        <width>41</width>
-        <height>41</height>
+        <x>100</x>
+        <y>508</y>
+        <width>40</width>
+        <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="toolTip">
        <string comment="Этот код получается у терапевта" extracomment="Этот код получается у терапевта"/>
@@ -830,72 +1255,77 @@
        <string>?</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="confirmHospitalization">
-      <property name="geometry">
-       <rect>
-        <x>580</x>
-        <y>470</y>
-        <width>191</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
-      </property>
-      <property name="text">
-       <string>Добавить</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_4">
-      <property name="geometry">
-       <rect>
-        <x>680</x>
-        <y>150</y>
-        <width>82</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>IBeamCursor</cursorShape>
-      </property>
-      <property name="text">
-       <string>Женский</string>
-      </property>
-     </widget>
      <widget class="QDateEdit" name="dateExtract">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>450</y>
-        <width>191</width>
+        <x>170</x>
+        <y>380</y>
+        <width>121</width>
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
      </widget>
-     <widget class="QLabel" name="label_26">
+     <widget class="QLabel" name="label_22">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>430</y>
-        <width>191</width>
+        <x>90</x>
+        <y>140</y>
+        <width>81</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string>Дата выписки *</string>
+       <string>Номер *</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>287</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Цель госпитализации</string>
       </property>
       <property name="scaledContents">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_27">
+     <widget class="QLabel" name="label_29">
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>20</x>
         <y>360</y>
         <width>191</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Дата гопитализации</string>
@@ -904,17 +1334,86 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_28">
+     <widget class="QTextEdit" name="surname_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>360</y>
-        <width>151</width>
+        <x>20</x>
+        <y>70</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="genderFamale">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>90</y>
+        <width>82</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Женский</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>345</y>
+        <width>251</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string>Номер страхового полиса *</string>
+       <string>Причина отказа от госпитализации</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>360</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Дата выписки *</string>
       </property>
       <property name="scaledContents">
        <bool>false</bool>
@@ -923,11 +1422,102 @@
      <widget class="QTextEdit" name="numerPassport_3">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>140</y>
-        <width>121</width>
+        <x>90</x>
+        <y>160</y>
+        <width>71</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="hospitalizationCansel">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>315</y>
+        <width>341</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Отмена госпиталици по решению терапевта</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="confirmHospitalization">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>515</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>420</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Диагноз</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="patronumic_4">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>70</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
@@ -936,14 +1526,194 @@
      <widget class="QLabel" name="label_">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>200</y>
+        <x>20</x>
+        <y>220</y>
         <width>151</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Место работы *</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="patronumic_3">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>160</y>
+        <width>211</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>50</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Имя *</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="name_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateInsuranceDead_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>240</y>
+        <width>121</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="hospitalizationCode">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>508</y>
+        <width>80</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="doctor">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>471</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>140</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Страховая компания *</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="genderMale">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>70</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Мужской</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>140</y>
+        <width>211</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Номер страхового полиса *</string>
       </property>
       <property name="scaledContents">
        <bool>false</bool>
@@ -954,41 +1724,67 @@
      <attribute name="title">
       <string>Направление на лечебно-диагностические мероприятия</string>
      </attribute>
-     <widget class="QPushButton" name="findPatientButton">
+     <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>280</y>
-        <width>141</width>
-        <height>51</height>
+        <x>90</x>
+        <y>100</y>
+        <width>201</width>
+        <height>171</height>
        </rect>
       </property>
-      <property name="text">
-       <string>Найти</string>
+      <property name="title">
+       <string>Поиск пациента по id</string>
       </property>
+      <widget class="QPushButton" name="findPatientButton">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="findPatientById">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>180</width>
+         <height>40</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
-     <widget class="QLineEdit" name="findPatientById">
+     <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>220</y>
-        <width>180</width>
-        <height>40</height>
+        <x>400</x>
+        <y>100</y>
+        <width>291</width>
+        <height>171</height>
        </rect>
       </property>
-     </widget>
-     <widget class="QLabel" name="label_30">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>200</y>
-        <width>181</width>
-        <height>16</height>
-       </rect>
+      <property name="title">
+       <string>Поиск пациента по QR-коду</string>
       </property>
-      <property name="text">
-       <string>Найти поциента по id </string>
-      </property>
+      <widget class="QPushButton" name="findPatientButton_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>110</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>

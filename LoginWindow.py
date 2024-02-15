@@ -9,6 +9,7 @@ class Ui_loginWindow(object):
 
     loggined = False
 
+
     def setupUi(self, loginWindow):
         loginWindow.setObjectName("loginWindow")
         loginWindow.resize(520, 273)
@@ -38,14 +39,18 @@ class Ui_loginWindow(object):
 
     def retranslateUi(self, loginWindow):
         _translate = QtCore.QCoreApplication.translate
-        loginWindow.setWindowTitle(_translate("loginWindow", "MainWindow"))
+        loginWindow.setWindowTitle(_translate("loginWindow", "Авторизация"))
         self.loginLabel.setText(_translate("loginWindow", "Логин:"))
         self.passwordLabel.setText(_translate("loginWindow", "Пароль:"))
         self.loginButton.setText(_translate("loginWindow", "Войти"))
 
     def auth(self):
         #loggined = validatePerson(login, password)
-        loggined = validatePerson(login=self.loginEnter.toPlainText(), password=self.passwordEdit.toPlainText())
-        print(loggined)
-        return loggined
+        try:
+            login = self.loginEnter.getText()
+            password = self.passwordEdit.toPlainText()
+            loggined = validatePerson(login, password)
+        except Exception as e:
+            print(e, " ", "login")
+
 

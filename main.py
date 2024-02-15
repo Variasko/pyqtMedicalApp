@@ -6,14 +6,19 @@ import sys
 
 
 
-def asd():
+def login():
     global functionWindow
     functionWindow = QtWidgets.QMainWindow()
     ui = Ui_functionWindow()
     ui.setupUi(functionWindow)
 
-    a = Ui_loginWindow.auth()
 
+
+    try:
+        a = Ui_loginWindow()
+        auth = a.auth()
+    except Exception as e:
+        print(e)
 
     functionWindow.show()
     LoginWindow.hide()
@@ -25,10 +30,5 @@ if __name__ == "__main__":
     ui = Ui_loginWindow()
     ui.setupUi(LoginWindow)
     LoginWindow.show()
-
-    ui.loginButton.clicked.connect(asd)
-
-
-
-
+    ui.loginButton.clicked.connect(login)
     sys.exit(app.exec_())
