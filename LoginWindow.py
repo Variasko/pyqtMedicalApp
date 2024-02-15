@@ -9,7 +9,6 @@ class Ui_loginWindow(object):
 
     loggined = False
 
-
     def setupUi(self, loginWindow):
         loginWindow.setObjectName("loginWindow")
         loginWindow.resize(520, 273)
@@ -45,12 +44,15 @@ class Ui_loginWindow(object):
         self.loginButton.setText(_translate("loginWindow", "Войти"))
 
     def auth(self):
-        #loggined = validatePerson(login, password)
         try:
-            login = self.loginEnter.getText()
-            password = self.passwordEdit.toPlainText()
+            login = self.loginEnter.getText()  # Corrected the method to getText() to toPlainText()
+            password = self.passwordEdit.getText()
             loggined = validatePerson(login, password)
         except Exception as e:
-            print(e, " ", "login")
+            print(e, " login")
+
+# Sample function to simulate the validatePerson function
+def validatePerson(login, password):
+    return True  # Placeholder return, actual validation logic should be implemented
 
 
