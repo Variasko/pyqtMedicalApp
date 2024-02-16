@@ -22,7 +22,7 @@ def login(L):
             functionWindow.show()
             L.hide()
 
-            ui.confirmAddPatientButton.clicked.connect(lambda: getData(functionWindow))
+            ui.confirmAddPatientButton.clicked.connect(lambda: getData(ui))
 
 
     except Exception as e:
