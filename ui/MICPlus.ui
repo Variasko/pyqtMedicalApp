@@ -177,7 +177,7 @@
        </font>
       </property>
       <property name="title">
-       <string>Страховой полис</string>
+       <string>Страховой полис *</string>
       </property>
       <widget class="QLabel" name="numberInsurancePolicAddNewPatientLabel_2">
        <property name="geometry">
@@ -260,7 +260,7 @@
        </font>
       </property>
       <property name="title">
-       <string>Медицинская карта</string>
+       <string>Медицинская карта *</string>
       </property>
       <widget class="QDateEdit" name="dateGetMedicalCardAddNewPatientDatepicker_2">
        <property name="geometry">
@@ -645,7 +645,7 @@
         <rect>
          <x>20</x>
          <y>255</y>
-         <width>101</width>
+         <width>111</width>
          <height>21</height>
         </rect>
        </property>
@@ -697,7 +697,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Место работы *</string>
+        <string>Место работы</string>
        </property>
        <property name="scaledContents">
         <bool>false</bool>
@@ -737,7 +737,7 @@
         <rect>
          <x>20</x>
          <y>180</y>
-         <width>51</width>
+         <width>61</width>
          <height>21</height>
         </rect>
        </property>
@@ -748,7 +748,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Адрес</string>
+        <string>Адрес *</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="workPlaceAddNewPatientLineEdit_2">
