@@ -1,34 +1,45 @@
 from LoginWindow import Ui_loginWindow
-from menuWindow import *
+from MICPlus import Ui_functionWindow
 from dbConnectHelper import validatePerson
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
+from function import *
 
 
-
-def login():
+def login(L):
     global functionWindow
     functionWindow = QtWidgets.QMainWindow()
-    ui = Ui_functionWindow()
-    ui.setupUi(functionWindow)
+    ui = Ui_functionWindow(functionWindow)
 
+    auth = False
 
+    auth = uiL.auth(uiL.loginEnter.toPlainText(), uiL.passwordEdit.toPlainText())
+    print(auth)
 
     try:
-        a = Ui_loginWindow()
-        auth = a.auth()
+        if auth:
+            print("Вы авторизованы")
+            functionWindow.show()
+            L.hide()
+
+            ui.confirmAddPatientButton.clicked.connect(lambda: getData(functionWindow))
+
+
     except Exception as e:
         print(e)
 
-    functionWindow.show()
-    LoginWindow.hide()
+def getData(window):
+    getField(window)
 
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
-    LoginWindow = QtWidgets.QMainWindow()
-    ui = Ui_loginWindow()
-    ui.setupUi(LoginWindow)
-    LoginWindow.show()
-    ui.loginButton.clicked.connect(login)
-    sys.exit(app.exec_())
+    global uiL
+    try:
+        app = QtWidgets.QApplication(sys.argv)
+        LoginWindow = QtWidgets.QMainWindow()
+        uiL = Ui_loginWindow(LoginWindow)
+        LoginWindow.show()
+        uiL.loginButton.clicked.connect(lambda: login(LoginWindow))
+        sys.exit(app.exec_())
+    except Exception as e:
+        print(e)

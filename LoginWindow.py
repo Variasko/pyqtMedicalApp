@@ -2,14 +2,14 @@ import sys
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from sqlalchemy.orm import Session
-from dbConnectHelper import validatePerson
+import dbConnectHelper
 
 
 class Ui_loginWindow(object):
-
     loggined = False
 
-    def setupUi(self, loginWindow):
+    def __init__(self, loginWindow):
+        global loginEnter, passwordEdit
         loginWindow.setObjectName("loginWindow")
         loginWindow.resize(520, 273)
         self.centralwidget = QtWidgets.QWidget(loginWindow)
@@ -43,16 +43,5 @@ class Ui_loginWindow(object):
         self.passwordLabel.setText(_translate("loginWindow", "Пароль:"))
         self.loginButton.setText(_translate("loginWindow", "Войти"))
 
-    def auth(self):
-        try:
-            login = self.loginEnter.getText()  # Corrected the method to getText() to toPlainText()
-            password = self.passwordEdit.getText()
-            loggined = validatePerson(login, password)
-        except Exception as e:
-            print(e, " login")
-
-# Sample function to simulate the validatePerson function
-def validatePerson(login, password):
-    return True  # Placeholder return, actual validation logic should be implemented
-
-
+    def auth(self, l, p):
+        return dbConnectHelper.validatePerson(l, p)

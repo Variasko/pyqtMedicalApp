@@ -11,13 +11,15 @@ def validatePerson(login, password):
     with Session(autoflush=False, bind=engine) as db:
         users = db.query(User).all()
 
+        print(login, password)
+
         isLoggined = False
 
 
         for i in users:
             if (i.login == login and i.password == password):
+                print(1)
                 return True
 
-    print(1)
 
 
