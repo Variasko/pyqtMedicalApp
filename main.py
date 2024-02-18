@@ -6,7 +6,7 @@ import sys
 
 
 
-def login():
+def login(self):
     global functionWindow
     functionWindow = QtWidgets.QMainWindow()
     ui = Ui_functionWindow()
@@ -30,5 +30,7 @@ if __name__ == "__main__":
     ui = Ui_loginWindow()
     ui.setupUi(LoginWindow)
     LoginWindow.show()
-    ui.loginButton.clicked.connect(login)
+
+    ui.loginButton.clicked.connect(ui.auth)  # Подключаем метод auth к кнопке "Войти"
+
     sys.exit(app.exec_())

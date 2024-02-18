@@ -1,12 +1,8 @@
 import sys
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-from sqlalchemy.orm import Session
 from dbConnectHelper import validatePerson
 
-
 class Ui_loginWindow(object):
-
     loggined = False
 
     def setupUi(self, loginWindow):
@@ -31,28 +27,41 @@ class Ui_loginWindow(object):
         self.loginButton = QtWidgets.QPushButton(self.centralwidget)
         self.loginButton.setGeometry(QtCore.QRect(200, 190, 111, 31))
         self.loginButton.setObjectName("loginButton")
+
+        self.registerButton = QtWidgets.QPushButton(self.centralwidget)  # Добавляем кнопку "Зарегистрироваться"
+        self.registerButton.setGeometry(QtCore.QRect(320, 190, 111, 31))
+        self.registerButton.setObjectName("registerButton")
+        self.registerButton.setText("Зарегистрироваться")
+
+        self.errorLabel = QtWidgets.QLabel(self.centralwidget)
+        self.errorLabel.setGeometry(QtCore.QRect(100, 160, 300, 20))
+        self.errorLabel.setObjectName("errorLabel")
+        self.errorLabel.setStyleSheet("color: red")
+
         loginWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(loginWindow)
         QtCore.QMetaObject.connectSlotsByName(loginWindow)
 
     def retranslateUi(self, loginWindow):
-        _translate = QtCore.QCoreApplication.translate
-        loginWindow.setWindowTitle(_translate("loginWindow", "Авторизация"))
-        self.loginLabel.setText(_translate("loginWindow", "Логин:"))
-        self.passwordLabel.setText(_translate("loginWindow", "Пароль:"))
-        self.loginButton.setText(_translate("loginWindow", "Войти"))
+        loginWindow.setWindowTitle("Авторизация")  # Убираем использование _translate
+        self.loginLabel.setText("Логин:")  # Убираем использование _translate
+        self.passwordLabel.setText("Пароль:")  # Убираем использование _translate
+        self.loginButton.setText("Войти")  # Убираем использование _translate
 
     def auth(self):
         try:
-            login = self.loginEnter.getText()  # Corrected the method to getText() to toPlainText()
-            password = self.passwordEdit.getText()
-            loggined = validatePerson(login, password)
-        except Exception as e:
-            print(e, " login")
+            login = self.loginEnter.toPlainText()
+            password = self.passwordEdit.toPlainText()
 
+            if not login or not password:
+                self.errorLabel.setText("Логин и пароль должны быть заполнены")
+            elif not validatePerson(login, password):
+                self.errorLabel.setText("Пользователь не зарегистрирован")
+            else:
+                self.errorLabel.setText("Успешный вход")  # Здесь можно добавить логику для успешной авторизации
+        except Exception as e:
+            self.errorLabel.setText(str(e) + " authentication")
 # Sample function to simulate the validatePerson function
 def validatePerson(login, password):
     return True  # Placeholder return, actual validation logic should be implemented
-
-
